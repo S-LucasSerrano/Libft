@@ -33,8 +33,8 @@ CURSIVE='\033[3m'
 all: $(NAME)
 
 $(NAME): $(OBJ)
-	@ar rc $(NAME) $(OBJ_DIR)/$(OBJ)
-	@echo "   - generated $(NAME)"
+	@echo $(CURSIVE)$(GRAY)"      - Generating $(NAME)"$(NONE)
+	@ar rc $(NAME) $(OBJ_DIR)/$(OBJ)	
 
 $(OBJ): $(SRC)
 	@gcc $(FLAGS) -c $(SRC)
@@ -42,13 +42,13 @@ $(OBJ): $(SRC)
 	@mv $(OBJ) $(OBJ_DIR)
 
 clean:
+	@echo $(CURSIVE)$(GRAY) "     - Cleaning Libft..." $(NONE)
 	@rm -f $(OBJ_DIR)/$(OBJ)
 	@rm -rf $(OBJ_DIR)
-	@echo "   - deleted object files"
 
 fclean: clean
+	@echo $(CURSIVE)$(GRAY) "     - Removing $(NAME)..." $(NONE)
 	@rm -f $(NAME)
-	@echo "   - deleted $(NAME)"
 
 re: fclean all
 
