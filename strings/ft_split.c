@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "libft_str.h"
 
 static int	ft_lettercount(const char *str, char c)
 {
@@ -22,7 +22,7 @@ static int	ft_lettercount(const char *str, char c)
 	return (lcount);
 }
 
-/* Creates -using malloc- a 2D table and saves <str>
+/* Creates -using malloc- a 2D table containing <str>
 splited in the strings separated by <c> */
 char	**ft_split(const char *str, char c)
 {

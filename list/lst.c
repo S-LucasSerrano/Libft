@@ -1,4 +1,5 @@
-#include "libft.h"
+#include "libft_lst.h"
+#include <stdlib.h>
 
 /* Creates -with malloc- a new element of the list
 with content = <con> and next = NULL */

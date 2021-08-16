@@ -1,4 +1,4 @@
-#include "libft.h"
+#include "libft_str.h"
 
 /* Creates -with malloc- a copy of <str> */
 char	*ft_strdup(const char *str)

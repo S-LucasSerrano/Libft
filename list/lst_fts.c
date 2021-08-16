@@ -1,4 +1,5 @@
-#include "libft.h"
+#include "libft_lst.h"
+#include <stdlib.h>
 
 /* Applais <funct> to all content in <lst> */
 void	ft_lstiter(t_list *lst, void (*funct)(void *))

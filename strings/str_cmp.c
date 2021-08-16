@@ -1,4 +1,4 @@
-#include "libft.h"
+#include "libft_str.h"
 
 /* Compares no more than <n> chars of <str1> and <str2>.
 Returns the difference (*str1 - *str2) between the first different char.

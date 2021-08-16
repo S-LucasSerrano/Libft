@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "libft_put.h"
 
 static void	writenbr(long long nbr, int fd)
 {

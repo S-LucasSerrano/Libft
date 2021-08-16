@@ -1,7 +1,7 @@
-#include "libft.h"
+#include "libft_put.h"
 
-/* Writes int <nbr> in hexadecimal, with the alphabet characters
-in lowercase, to the file descripted by <fd> as chars. */
+/* Writes <nbr> as chars in hexadecimal, with the alphabet
+characters in lowercase, to the file descripted by <fd>. */
 void	ft_puthex_fd(unsigned int nbr, int fd)
 {
 	char	*base;
@@ -16,8 +16,8 @@ void	ft_puthex_fd(unsigned int nbr, int fd)
 		ft_putchar_fd(*(base + nbr), 1);
 }
 
-/* Writes int <nbr> in long hexadecimal, with the alphabet characters
-in lowercase, to the file descripted by <fd> as chars. */
+/* Writes <nbr> as chars in long hexadecimal, with the alphabet
+characters in lowercase, to the file descripted by <fd>. */
 void	ft_putlonghex_fd(unsigned long nbr, int fd)
 {
 	char	*base;
@@ -32,7 +32,7 @@ void	ft_putlonghex_fd(unsigned long nbr, int fd)
 		ft_putchar_fd(*(base + nbr), fd);
 }
 
-/* Writes int <nbr> in hexadecimal, with the alphabet characters
+/* Writes <nbr> as chars in hexadecimal, with the alphabet characters
 in uppercase, to the file descripted by <fd> as chars. */
 void	ft_putupperhex_fd(unsigned int nbr, int fd)
 {

@@ -1,4 +1,4 @@
-#include "libft.h"
+#include "libft_mem.h"
 
 /* Creates -with malloc- an array with <count> elements of 
 <size> bytes and fills it with '\0' chars */

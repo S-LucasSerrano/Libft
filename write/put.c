@@ -1,5 +1,5 @@
 #include <unistd.h>
-#include "libft.h"
+#include "../strings/libft_str.h"
 
 /* Writes char <c> in the file descripted by <fd>. */
 void	ft_putchar_fd(char c, int fd)
